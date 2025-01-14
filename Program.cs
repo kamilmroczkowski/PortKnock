@@ -12,10 +12,13 @@ namespace PortKnock
 {
     internal class Program
     {
+        static string info = "https://github.com/kamilmroczkowski/PortKnock\n" +
+            "Kamil Mroczkowski kamil@adminkm.pl\n";
         static string help = "Usage: " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Name + " /h:domain.ltd /p:u7123;t4421;u10092;t46331 [/d:500] [/w]\n" +
             "/h - hostname (many times declare)\n/p - ports tcp/udp\n/d - delay ms\n/w - wait for any key";
         static void Main(string[] args)
         {
+            Console.WriteLine(info);
             int delay = 500;
             string ports = "";
             string tmp = "";
